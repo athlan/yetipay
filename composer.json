@@ -1,0 +1,27 @@
+{
+    "name": "athlan/yetipay",
+    "version": "1.0.0",
+    "type": "library",
+    "description": "Yetipay.pl PHP library",
+    "keywords": ["yetipay", "payments", "payment"],
+    "homepage": "https://github.com/athlan/yetipay",
+    "license": "MIT",
+    
+    "authors": [
+        {
+            "name": "Piotr Pelczar",
+            "email": "me@athlan.pl",
+            "homepage": "https://github.com/athlan"
+        }
+    ],
+    
+    "autoload": {
+        "psr-4": {
+            "Yetipay\\": "src/"
+        }
+    },
+    
+    "require": {
+        "guzzlehttp/guzzle": "4.2.2"
+    }
+}
