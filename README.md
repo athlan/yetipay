@@ -1,17 +1,17 @@
 Yetipay PHP Client library
 ===
 
-This library allows to easy integration with [yetipay](https://www.yetipay.pl/) payemtns.
+This library allows to easy integration with [yetipay](https://www.yetipay.pl/) payments.
 
-# Features
+## Features
 
 * Generated payment button
 * Handles pingback (`URL_STATUS`)
 * Verifies payments
 
-# Installation
+## Installation
 
-## Composer
+### Composer
 
 Add dependency in `composer.json` file:
 
@@ -23,9 +23,9 @@ Add dependency in `composer.json` file:
 }
 ```
 
-# Examples
+## Examples
 
-## Handle pingback  (`URL_STATUS`)
+### Handle pingback  (`URL_STATUS`)
 
 ```php
 <?php 
@@ -51,7 +51,7 @@ die('FAILED');
 
 ```
 
-## Generate payment button
+### Generate payment button
 
 ```php
 <?php
@@ -87,7 +87,7 @@ $buttonGenerator = new Yetipay\PaymentButtonCodeGenerator($yetipay);
 </html>
 ```
 
-## Validate payment
+### Validate payment
 
 ```<?php 
 
