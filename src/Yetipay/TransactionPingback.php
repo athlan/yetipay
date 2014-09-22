@@ -25,12 +25,20 @@ class TransactionPingback
             $hashParams[] = $params['transaction_id'];
         }
         
+        if(isset($params['merchant_id'])) {
+            $hashParams[] = $params['merchant_id'];
+        }
+        
         if(isset($params['order_id'])){
             $hashParams[] = $params['order_id'];
         }
         
         if(isset($params['product_id'])) {
             $hashParams[] = $params['product_id'];
+        }
+        
+        if(isset($params['user_id'])) {
+            $hashParams[] = $params['user_id'];
         }
         
         if(isset($params['amount'])) {
