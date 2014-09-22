@@ -89,7 +89,8 @@ $buttonGenerator = new Yetipay\PaymentButtonCodeGenerator($yetipay);
 
 ### Validate payment
 
-```<?php 
+```php
+<?php 
 
 use Yetipay as Yetipay;
 
