@@ -43,7 +43,7 @@ class TransactionValidate
         return $this->httpClient;
     }
 
-	  /**
+    /**
      * @param \GuzzleHttp\Client $httpClient
      */
     public function setHttpClient($httpClient)
@@ -51,7 +51,7 @@ class TransactionValidate
         $this->httpClient = $httpClient;
     }
 
-	  /**
+    /**
      * @return the $urlValidate
      */
     public function getUrlValidate()
@@ -59,7 +59,7 @@ class TransactionValidate
         return $this->urlValidate;
     }
 
-	  /**
+    /**
      * @param string $urlValidate
      */
     public function setUrlValidate($urlValidate)
@@ -67,7 +67,7 @@ class TransactionValidate
         $this->urlValidate = $urlValidate;
     }
 
-	  public function validateTransaction($transactionId) {
+    public function validateTransaction($transactionId) {
         $postfields = array(
             'merchant_id' => $this->client->getMerchantId(),
             'transaction_id' => $transactionId,
