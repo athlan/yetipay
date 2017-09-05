@@ -77,10 +77,15 @@ class TransactionValidate
         $postfields['hash'] = $this->generateHash($postfields);
         
         $response = $this->getHttpClient()->post($this->urlValidate, array(
-            'body' => $postfields,
+            'form_params' => $postfields,
         ));
         
-        $responseData = $response->json();
+        if($response->getStatusCode() != 200) {
+           return array(
+              'status' => $response->getStatusCode(),
+           );
+        }
+        $responseData = json_decode($response->getBody(), true);
         $result = $responseData;
         
         unset($result['time'], $result['data']);
